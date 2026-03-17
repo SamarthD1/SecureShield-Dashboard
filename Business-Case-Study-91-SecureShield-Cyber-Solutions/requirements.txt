@@ -1,0 +1,13 @@
+pandas
+numpy
+streamlit
+plotly
+matplotlib
+seaborn
+statsmodels
+xlsxwriter
+fpdf
+jupyter
+nbconvert
+ipykernel
+nbformat
