@@ -209,7 +209,7 @@ if df_tx is not None:
         with c1: 
             st.subheader("Financial Health: Renewal Probability")
             st.plotly_chart(px.histogram(df_crm, x='renewal_probability', nbins=20, title="Distribution of Client Renewal Probability", color_discrete_sequence=['#00cc96'], template="plotly_dark"), use_container_width=True)
-        with col2: 
+        with c2: 
             st.subheader("Vulnerability Scan Score Distribution")
             avg_vuln = df_crm.groupby('industry')['vulnerability_scan_score'].mean().reset_index()
             st.plotly_chart(px.bar(avg_vuln, x='industry', y='vulnerability_scan_score', color='industry', title="Average Vulnerability Scan Score by Industry", template="plotly_dark"), use_container_width=True)
