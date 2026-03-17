@@ -64,7 +64,11 @@ df_tx, df_system, df_crm = load_data()
 
 # Sidebar Navigation
 with st.sidebar:
-    st.image("https://img.icons8.com/parakeet/512/security-shield.png", width=100)
+    st.markdown("""
+        <div style='text-align:center; padding: 10px 0 5px 0;'>
+            <span style='font-size: 72px;'>🛡️</span>
+        </div>
+    """, unsafe_allow_html=True)
     st.title("SecureShield AI")
     st.markdown("---")
     menu = st.radio(
